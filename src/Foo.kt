@@ -2,9 +2,9 @@ class Foo
 {
     private fun fooBar()
     {
-        fun localGetBar(x: Int): Bar? = Bar(x)
+        fun localGetBar(x: Int): Bar = Bar(x)
 
-        val bar = localGetBar(42) ?: return
+        val bar = localGetBar(42)
         println("X: " + bar. /* IntelliSense here */)
     }
 
